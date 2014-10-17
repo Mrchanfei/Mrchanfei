@@ -17,6 +17,8 @@ Before=sockets.target
 IgnoreOnIsolate=yes
 
 [Socket]
+ExecStartPre=-/bin/rm -f /dev/log
+
 Service=systemd-journald.service
 ListenDatagram=/run/systemd/journal/dev-log
 Symlinks=/dev/log
