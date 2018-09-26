@@ -15,4 +15,4 @@ PAMName=systemd-user
 Type=notify
 ExecStart=-@rootlibexecdir@/systemd --user
 Slice=user-%i.slice
-KillMode=mixed
+KillMode=process
